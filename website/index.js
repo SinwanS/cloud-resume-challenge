@@ -56,12 +56,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const counter = document.querySelector(".counter-number");
+const counters = document.querySelectorAll(".counter-number");
 async function updateCounter() {
     let response = await fetch(
         "https://i6adrhsujsrsc34z63vdz3qonu0dhilo.lambda-url.us-east-1.on.aws/"
     );
     let data = await response.json();
-    counter.innerHTML = `👀 Views: ${data}`;
+    counters.forEach(
+        function(node) {
+            node.innerHTML = `👀 Views: ${data}`;
+        }
+    );
 }
 updateCounter();
