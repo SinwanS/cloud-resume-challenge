@@ -14,4 +14,4 @@ DynamoDB. The next step I am currently working on is setting up Infrastructure a
 - Dynamo DB
 - GitHub Actions
 
-## [Live Demo 🔗](https://resume.sinwansaeed.com)
+## NO LONGER LIVE
